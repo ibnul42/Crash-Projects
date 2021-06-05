@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challange 1: Your Age in Days</h2>   
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click Me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="resetAgeInDays()">Reset</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h2>Challange 2: Cat Generator</h2>
+        <button class="btn btn-success" onclick="generateCat()" id="cat-gen-button">Generat Cat</button>
+
+        <div class="flex-box-container-2" id="flex-cat-gen">
+        </div>
+    </div>
+
+    <div class="container-3">
+        <h2>Challange 3: Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img src="/Photos/rock.png" id="rock" alt="" height="150" width="150" onclick="rpsGame(this)">
+            <img src="/Photos/paper.png" id="paper" alt="" height="150" width="150" onclick="rpsGame(this)">
+            <img src="/Photos/scissor.jpg" id="scissor" alt="" height="150" width="150" onclick="rpsGame(this)">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
